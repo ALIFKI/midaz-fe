@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Linda-Hill';
+  src: url('../assets/fonts/Linden_Hill/LindenHill-Regular.ttf') format('ttf'),
+  url('../assets/fonts/Linden_Hill/LindenHill-Italic.ttf') format('ttf'),
+}
+
+
+.bg-cement-pattren {
+  background: url('../assets/images/bg_pattern.png') lightgray 50% / cover no-repeat;
+  /* mix-blend-mode: multiply; */
+  /* transform: rotate(-90deg); */
+  scale: 1.1;
+  flex-shrink: 0;
+}

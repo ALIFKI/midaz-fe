@@ -13,6 +13,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        showup: {
+          '0%': { opacity : '0' },
+          '100%': { opacity : '1' },
+          
+        }
+      },
+      animation: {
+        appearup: 'showup 1s ease-in-out',
+      }
     },
   },
   plugins: [],
