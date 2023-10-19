@@ -3,6 +3,7 @@
 import React from 'react'
 import Logo from '../../assets/icon/Web/logo.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export interface NavbarComponentsProps {
@@ -23,18 +24,18 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
       </div>
       <div className="menu">
         <div className="flex flex-row">
-          <a href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Event
-          </a>
-          <a href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          </Link>
+          <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
             About
-          </a>
-          <a href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          </Link>
+          <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Gallery
-          </a>
-          <a href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          </Link>
+          <Link href="/pages/contact" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>

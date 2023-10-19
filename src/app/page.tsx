@@ -6,6 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import NavbarComponents from '@/components/navbar'
 import WhatsappIcon from '../assets/icon/Web/ic_wa.svg'
 import Image from 'next/image'
+import { Player } from '@lottiefiles/react-lottie-player'
+import lottieJSON from '../assets/icon/Web/midaz scroll.json'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -97,15 +99,19 @@ export default function Home() {
     }
   };
   return (
-    <div className='bg-[#0E1B37] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
-        <div className="flex flex-column z-1 relative w-full section-2 justify-center items-center">
-          <div className="relative w-full justify-center items-center flex flex-row bg-[#0E1B37] overflow-hidden md:h-[95vh]">
-            <video muted={true} id="v0" tabIndex={0} preload="preload" className='w-[100%]'>
+        <div className="flex flex-col z-1 relative w-full section-2 justify-center items-center">
+          <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[95vh] flex justify-center items-center">
+            <video muted={true} id="v0" tabIndex={0} preload="preload" className='w-[100%] flex justify-center items-center'>
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
             </video>
 
             <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <a className='text-golden' href="" style={{transitionDuration : '1s'}}>Contact Page</a></span>
+          </div>
+          <div className="flex justify-center items-center flex-col ml-[30px]">
+            <span className='text-golden'>Swipe Down</span>
+            <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player>
           </div>
         </div>
         <div className="fixed flex bg-[#1B2C45] h-[80px] w-[80px] justify-center items-center rounded-[40px] max-lg:bottom-[80px] md:bottom-4 right-[10px]">
