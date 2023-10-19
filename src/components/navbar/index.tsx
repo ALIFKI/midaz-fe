@@ -16,15 +16,17 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
     <div className="flex flex-row lg:mx-[100px] max-lg:mt-[70px] md:mx-[80px] md:mt-10 justify-between items-center">
       <div className="brand">
         {/* <Logo></Logo> */}
+        <Link href={'/'}>
         <Image
           priority
           src={Logo}
           alt="Follow us on Twitter">
         </Image>
+        </Link>
       </div>
       <div className="menu">
         <div className="flex flex-row">
-          <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          <Link href="/pages/event" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Event
           </Link>
           <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>

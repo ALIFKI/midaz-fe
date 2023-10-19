@@ -8,6 +8,7 @@ import WhatsappIcon from '../assets/icon/Web/ic_wa.svg'
 import Image from 'next/image'
 import { Player } from '@lottiefiles/react-lottie-player'
 import lottieJSON from '../assets/icon/Web/midaz scroll.json'
+import Link from 'next/link'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -107,7 +108,7 @@ export default function Home() {
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
             </video>
 
-            <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <a className='text-golden' href="" style={{transitionDuration : '1s'}}>Contact Page</a></span>
+            <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
           <div className="flex justify-center items-center flex-col ml-[30px]">
             <span className='text-golden'>Swipe Down</span>

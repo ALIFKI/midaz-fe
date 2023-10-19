@@ -74,7 +74,27 @@ const ContactPage = ()=> {
             </div>
           </div>
           <div className="w-1/3">
-
+            <div className="form w-full flex justify-center items-center">
+              <form action="" method="post" className='flex flex-col w-4/5'>
+                <div className="form-grup flex flex-col w-full mb-4">
+                  <label htmlFor="nama" className={`${poppins.className} text-[#B6B6B6] text-[16px]`}>Nama</label>
+                  <input type="text" name="name" id="nama" className='flex w-full h-[40px] border-[1px] rounded-md border-[#2F3B4A] bg-[#0F1A29] mt-[6px]' />
+                </div>
+                <div className="form-grup flex flex-col w-full mb-4">
+                  <label htmlFor="nama" className={`${poppins.className} text-[#B6B6B6] text-[16px]`}>Email</label>
+                  <input type="email" name="email" id="email" className='flex w-full h-[40px] border-[1px] rounded-md border-[#2F3B4A] bg-[#0F1A29] mt-[6px]' />
+                </div>
+                <div className="form-grup flex flex-col w-full mb-4">
+                  <label htmlFor="nama" className={`${poppins.className} text-[#B6B6B6] text-[16px]`}>Message</label>
+                  <textarea name="message" id="note" className='flex w-full h-[40px] border-[1px] rounded-md border-[#2F3B4A] bg-[#0F1A29] mt-[6px]' />
+                </div>
+                <div className="form-grup flex flex-col w-full mt-2">
+                  <button type='submit' className={'bg-golden rounded-md text-black h-[40px] font-medium '+poppins.className}>
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
           <div className="w-1/3">
             <div className="maps">
