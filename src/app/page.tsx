@@ -1,71 +1,14 @@
 'use client'
-import gsap from 'gsap'
 import { ReactElement, useEffect, useRef, useState } from 'react'
-import Lenis from '@studio-freight/lenis'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import NavbarComponents from '@/components/navbar'
-import WhatsappIcon from '../assets/icon/Web/ic_wa.svg'
 import Image from 'next/image'
 import { Player } from '@lottiefiles/react-lottie-player'
 import lottieJSON from '../assets/icon/Web/midaz scroll.json'
 import Link from 'next/link'
-import WaImage from '../../public/icon/Web/ic_wa.png'
-
-
-gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
-  const comp = useRef(null); // create a ref for the root level element (for scoping)
-  const circle = useRef(null);
-  const [scroll,setScrol] = useState(0);
   const [isVideoPlay,setVideoPlay] = useState(0);
   const [animatedClass,setAnimatedClass] = useState('opacity-0 bottom-[17%]')
-  // const configLenis = ()=>{
-  //   const lenis = new Lenis()
-
-  //   lenis.on('scroll', (e) => {
-  //   })
-
-  //   function raf(time) {
-  //     lenis.raf(time)
-  //     requestAnimationFrame(raf)
-  //   }
-
-  //   requestAnimationFrame(raf)
-  // }
-
-  // const GsapConfig = ()=>{
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger : '.section-2',
-  //       start: 'top bottom',
-  //       end : 'bottom center',
-  //       scrub : true,
-  //       markers: true
-  //     }
-  //   })
-
-  //   const tl2 = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger : '.section-1',
-  //       start: '20%',
-  //       end : 'bottom center',
-  //       scrub : true,
-  //       markers: true
-  //     }
-  //   })
-
-  //   tl.fromTo('.midaz-logo-2',{
-  //     opacity: 0,
-  //   },{
-  //     opacity : 1
-  //   })
-  //   tl2.to('.midaz-logo',{
-  //     rotate : 180,
-  //     opacity : 0,
-  //   })
-  // }
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -108,12 +51,11 @@ export default function Home() {
             <video muted={true} id="v0" tabIndex={0} preload="preload" className='w-[100%] flex justify-center items-center'>
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
             </video>
-
-            <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" style={{transitionDuration : '1s'}}>Contact Page</Link></span>
+            <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
           <div className="flex justify-center items-center flex-col ml-[30px]">
             <span className='text-golden'>Swipe Down</span>
-            {/* <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player> */}
+            <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player>
           </div>
         </div>
         <div className="fixed flex bg-[#1B2C45] h-[80px] w-[80px] justify-center items-center rounded-[40px] max-lg:bottom-[80px] md:bottom-4 right-[10px]">
