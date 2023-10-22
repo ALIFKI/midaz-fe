@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { Player } from '@lottiefiles/react-lottie-player'
 import lottieJSON from '../assets/icon/Web/midaz scroll.json'
 import Link from 'next/link'
+import WaImage from '../../public/icon/Web/ic_wa.png'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -112,11 +113,11 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center flex-col ml-[30px]">
             <span className='text-golden'>Swipe Down</span>
-            <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player>
+            {/* <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player> */}
           </div>
         </div>
         <div className="fixed flex bg-[#1B2C45] h-[80px] w-[80px] justify-center items-center rounded-[40px] max-lg:bottom-[80px] md:bottom-4 right-[10px]">
-          <Image src={'/../../ic_wa.png'} width={40} height={40} alt={''}></Image>
+          <Image src={'/ic_wa.png'} width={40} height={40} alt={''}></Image>
         </div>
     </div>
   )

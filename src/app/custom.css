@@ -42,6 +42,10 @@ body {
   color: #B6B6B6;
   border: none;
 }
+
+abbr:where([title]){
+  text-decoration: none !important;
+}
 .react-calendar__month-view__days {
   border: 2px solid #AB8D60;
   border-radius: 5px;
@@ -60,4 +64,15 @@ body {
 .react-calendar__tile.react-calendar__month-view__days__day abbr {
   /* margin: 16px; */
   padding-left: 16px;
+}
+
+
+
+/* slider */
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40% !important;
 }

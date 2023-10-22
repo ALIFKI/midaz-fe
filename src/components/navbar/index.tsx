@@ -29,7 +29,7 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
           <Link href="/pages/event" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Event
           </Link>
-          <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          <Link href="/pages/about" className='text-[16px] mx-4 text-center uppercase text-golden'>
             About
           </Link>
           <Link href="http://" className='text-[16px] mx-4 text-center uppercase text-golden'>
