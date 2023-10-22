@@ -3,6 +3,15 @@ const nextConfig = {
   // output: 'export',
   // assetPrefix: './',
   // unoptimized: true,
+  serve: {
+    "executor": "@nrwl/next:server",
+    "defaultConfiguration": "development",
+    "options": {
+      "buildTarget": "test-nx:build",
+      "dev": true,
+      "port": 4200,
+      "hostname": "localhost"
+  },
   images: {
     remotePatterns: [
       {
