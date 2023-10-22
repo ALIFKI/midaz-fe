@@ -12,6 +12,7 @@ const nextConfig = {
       "port": 4200,
       "hostname": "localhost"
   },
+ },
   images: {
     remotePatterns: [
       {
