@@ -37,11 +37,11 @@ const About : FC<AboutProps> = ({}) => {
       <div className="flex lg:w-full justify-center items-center relative">
         <div className="absolute">
         </div>
-        <div className="flex flex-row justify-center items-center">
-          <div className='font-kapakana text-[4rem] mr-[-8rem]'>
-            Captivating Dining
-          </div>
-          <div>
+        <div className="flex flex-row justify-center items-center relative w-full">
+          <div className='relative justify-center items-center flex'>
+            <div className='absolute font-kapakana text-[4rem] left-[-50%]'>
+              Captivating Dining
+            </div>
             <svg width="512" height="514" viewBox="0 0 512 514" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
               <path d="M255.883 258.036C255.453 258.035 255.166 257.891 255.023 257.604L112.842 105.97C112.413 105.323 112.415 104.462 112.847 104.033C113.278 103.603 114.139 103.605 114.569 104.036L256.749 255.885C257.178 256.532 257.177 257.178 256.745 257.823C256.457 257.966 256.17 258.037 255.883 258.036Z" fill="url(#paint0_radial_410_2)"/>
@@ -429,14 +429,14 @@ const About : FC<AboutProps> = ({}) => {
               </radialGradient>
               </defs>
             </svg>
-          </div>
-          <div className='font-kapakana text-[4rem] ml-[-8rem]'>
-            Entertainment Experience
+            <div className='absolute font-kapakana text-[4rem] right-[-67%]'>
+              Entertainment Experience
+            </div>
           </div>
         </div>
       </div>
       <div className="flex w-full justify-center items-center mb-10">
-        <div className="flex w-10/12 md:gap-10">
+        <div className="flex w-11/12 md:gap-10">
           <div className={"leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
           Midaz will regularly host live music performances spanning various genres, from soulful jazz to high-energy R&B, ensuring that guests are treated to an array of musical styles that resonate with their preferences. The spacious dance floor and cozy seating areas provide the perfect ambiance for patrons to groove to the rhythms of top-notch live acts.
           </div>

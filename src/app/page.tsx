@@ -52,7 +52,7 @@ export default function Home() {
             <video muted={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
             </video>
-            <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
+            <span className={`absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
           <div className="flex justify-center items-center flex-col ml-[30px]">
             <span className='text-golden'>Swipe Down</span>
