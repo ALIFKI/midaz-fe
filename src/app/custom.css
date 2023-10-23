@@ -76,3 +76,21 @@ abbr:where([title]){
   align-items: center;
   min-width: 40% !important;
 }
+
+/* .nav-owl-class {
+  position: absolute;
+  height: 100%;
+  background-color: red;
+  top: 0;
+} */
+
+
+.owl-prev {
+  left: 0px;
+  position: absolute;
+}
+
+.owl-next {
+  position: absolute;
+  right: 0px;
+}
