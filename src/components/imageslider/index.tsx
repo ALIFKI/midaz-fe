@@ -49,10 +49,10 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
           start={2}
           responsive={{
             0 : {
-              items : 1
+              items : 2
             },
             768 : {
-              items : 1
+              items : 2
             },
             1024 : {
               items : 2,
