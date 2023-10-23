@@ -44,11 +44,12 @@ export default function Home() {
     }
   };
   return (
-    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0E1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
         <div className="flex flex-col z-1 relative w-full section-2 justify-center items-center">
-          <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[95vh] flex justify-center items-center">
-            <video muted={true} id="v0" tabIndex={0} preload="preload" className='w-[100%] flex justify-center items-center'>
+          <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[75vh] flex justify-center items-center">
+            <div className="absolute bg-red inset-0 z-10"></div>
+            <video muted={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
             </video>
             <span className={`absolute translate-x-[-50%] left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>

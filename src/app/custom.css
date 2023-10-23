@@ -31,6 +31,7 @@ body {
 .react-calendar__navigation__label {
   flex-grow: 0 !important;
   font-family: 'Poppins';
+  color: #FFF;
   margin : 2rem;
 }
 .react-calendar__month-view__weekdays__weekday{
@@ -45,6 +46,11 @@ body {
 
 abbr:where([title]){
   text-decoration: none !important;
+  color: #B6B6B6;
+  font-family: __Poppins_d60787;
+}
+.react-calendar__tile abbr{
+  color: #FFF;
 }
 .react-calendar__month-view__days {
   border: 2px solid #AB8D60;
@@ -83,14 +89,29 @@ abbr:where([title]){
   background-color: red;
   top: 0;
 } */
+@font-face {
+  font-family: Kapakana;
+  src: url('../../public/kapakana-regular.ttf');
+}
 
+.font-kapakana {
+  font-family: Kapakana;
+}
 
 .owl-prev {
   left: 0px;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding: 0px 8px;
 }
 
 .owl-next {
   position: absolute;
   right: 0px;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding: 0px 8px;
 }

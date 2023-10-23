@@ -37,9 +37,9 @@ const EventPage = ()=> {
         <div className="flex justify-center items-center mt-10 flex-col">
           <div className="text-golden text-4xl font-normal font-['Linden Hill'] tracking-wider">Upcoming Event</div>
         </div>
-        <div className="flex flex-row w-full mt-10 justify-center items-center">
+        <div className="flex flex-row w-full mt-5 justify-center items-center">
           <Calendar
-            tileClassName={'flex'}
+            tileClassName={'flex '+poppins.className}
             prev2Label={<></>}
             next2Label={<></>}
             nextLabel={<>

@@ -13,7 +13,7 @@ export interface NavbarComponentsProps {
 
 const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
   return (
-    <div className="flex flex-row lg:mx-[100px] max-lg:mt-[70px] md:mx-[80px] md:mt-10 justify-between items-center">
+    <div className="z-[99] flex flex-row lg:mx-[100px] max-lg:mt-[70px] md:mx-[80px] md:mt-10 justify-between items-center relative">
       <div className="brand">
         {/* <Logo></Logo> */}
         <Link href={'/'}>
@@ -25,7 +25,7 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
         </Link>
       </div>
       <div className="menu">
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-20">
           <Link href="/pages/event" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Event
           </Link>
