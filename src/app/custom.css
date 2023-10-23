@@ -5,6 +5,15 @@
 }
 
 
+.owl-item {
+  /* display: flex;
+  justify-items: center;
+  align-items: center; */
+}
+.owl-dots {
+  display: none;
+}
+
 .bg-cement-pattren {
   background: url('../assets/images/bg_pattern.png') lightgray 50% / cover no-repeat;
   /* mix-blend-mode: multiply; */

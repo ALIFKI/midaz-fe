@@ -26,10 +26,10 @@ const About : FC<AboutProps> = ({}) => {
 
         <span className={`${poppins_300.className} text-[1rem] tracking-[0.02rem] text-center leading-[2rem] text-[#B6B6B6] mt-[2.6rem] max-w-[62rem]`}>Our commitment to unmatched ambiance, mixology, and gastronomy transforms every visit into an exceptional dining and entertainment experience. Our goal is to foster a sense of belonging, encouraging patrons to create lasting memories with friends and family. Our dedicated staff ensures impeccable service and hospitality, making each visit memorable and enriching.</span>
       </div>
-      <div className='flex w-full'>
+      <div className='flex w-full mt-20'>
         <ImageSlider></ImageSlider>
       </div>
-      <div className="flex w-full justify-center items-center text-[#B6B6B6] lg:mt-10">
+      <div className="flex w-full justify-center items-center text-[#B6B6B6] lg:mt-20 max-lg:mt-20">
         <div className={poppins.className+" flex max-w-[62rem] text-center"}>
         Midaz Club & Lounge boasts a dynamic and diverse entertainment lineup that caters to all tastes. <br /> Whether you're in the mood for live music, electrifying DJ sets, or a culinary adventure, Midaz has it all under one roof.
         </div>

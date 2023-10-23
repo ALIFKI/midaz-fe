@@ -42,22 +42,7 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
           }
         ];
   return (<>
-      <div className="w-full mt-10">
-        {/* <Carousel
-            showArrows={true}
-            showIndicators={false}
-            infiniteLoop={false}
-            dynamicHeight={false}
-            className={''}
-            showStatus={false}
-            centerMode={true}
-          >
-            {responsive.map((item) => (
-              <div key={item.id} className='w-[50rem] h-[20rem] flex justify-center items-center'>
-                  <Image src={imagebar} alt='slides image' height={300} width={500} className='w-[20rem]'></Image>
-              </div>
-            ))}
-          </Carousel> */}
+      <div className="w-full">
           <OwlCarousel
           center
           loop
@@ -70,9 +55,10 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
               items : 1
             },
             1024 : {
-              items : 2.5,
+              items : 2,
             }
           }}
+          margin={40}
           nav={true}
           navContainerClass='nav-owl-class'
           navText={[`<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +70,7 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
 `]}
           >
             {responsive.map((item) => (
-              <div key={item.id} className='w-[40rem] h-[20rem] flex justify-center items-center'>
+              <div key={item.id} className='w-[100%] flex justify-center items-center'>
                   <Image src={imagebar} alt='slides image' height={300} width={500} className='w-[0]'></Image>
               </div>
             ))}

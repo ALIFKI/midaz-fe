@@ -47,7 +47,7 @@ export default function Home() {
     <div className='bg-[#0E1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
         <div className="flex flex-col z-1 relative w-full section-2 justify-center items-center">
-          <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[75vh] flex justify-center items-center">
+          <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[85vh] flex justify-center items-center">
             <div className="absolute bg-red inset-0 z-10"></div>
             <video muted={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
               <source type="video/mp4" src={"https://res.cloudinary.com/dq0yefdvv/video/upload/v1697633480/x0equ2ndoixujm5rqnhg.mp4"}></source>
