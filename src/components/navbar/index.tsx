@@ -32,7 +32,7 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
           <Link href="/pages/about" className='text-[16px] mx-4 text-center uppercase text-golden'>
             About
           </Link>
-          <Link href="/pages/galery" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          <Link href="/pages/gallery" className='text-[16px] mx-4 text-center uppercase text-golden'>
             Gallery
           </Link>
           <Link href="/pages/contact" className='text-[16px] mx-4 text-center uppercase text-golden'>
