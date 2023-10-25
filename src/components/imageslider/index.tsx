@@ -1,8 +1,5 @@
 'use client'
-
 import React, { FC } from 'react'
-import { Carousel } from "react-responsive-carousel";
-import { items } from "../../../public/Items.json";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from 'next/image';
 import imagebar from '../../../public/image_barr.png'
@@ -10,11 +7,9 @@ var $ = require("jquery");
 if (typeof window !== "undefined") {
    window.$ = window.jQuery = require("jquery");
 }
-
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from 'next/dynamic';
-
 const OwlCarousel = dynamic(()=> import('react-owl-carousel'),{ssr : false});
 
 export interface ImageSliderProps {
