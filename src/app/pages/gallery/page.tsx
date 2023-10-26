@@ -11,7 +11,7 @@ export interface GalleryPageProps {
 
 const GalleryPage : FC<GalleryPageProps> = ({})=>{
 
-  const [isActive,setIsActive] = useState<string>('videos')
+  const [isActive,setIsActive] = useState<string>('photos')
 
   const getIsActive = (menu:string)=>{
     if(menu == isActive){
