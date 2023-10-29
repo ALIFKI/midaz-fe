@@ -15,7 +15,7 @@ export interface ModalProps {
 
 const Modal : React.FC<ModalProps>= ({isOpen,onClose,children})=>{
   return (
-    <div className={`z-[99] absolute inset-0 bg-[rgba(0,0,0,0.7)] flex justify-center items-center ${isOpen ? 'flex' : 'hidden'}`}>
+    <div className={`z-[99] fixed left-0 right-0 h-[100vh] top-0 bg-[rgba(0,0,0,0.7)] flex justify-center items-center ${isOpen ? 'flex' : 'hidden'}`}>
       <div className="flex relative md:w-[23rem] md:h-[42rem] bg-white">
         <div className='flex justify-center items-center h-[2.5rem] w-[2.5rem] bg-white shadow-md rounded-[30px] absolute right-[-1.25rem] top-[-1.25rem] cursor-pointer' onClick={onClose}>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

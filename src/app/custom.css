@@ -21,6 +21,14 @@
 }
 
 
+.react-calendar__navigation__label {
+  margin: 1rem !important;
+}
+
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+  font-size: 1rem;
+}
+
 .owl-item {
   /* display: flex;
   justify-items: center;
@@ -69,6 +77,15 @@ body {
   border: none;
 }
 
+.react-calendar__month-view__days__day abbr {
+  display: none;
+}
+.react-calendar__year-view__months__month div {
+  display: none;
+}
+.react-calendar__decade-view__years__year div {
+  display: none;
+}
 abbr:where([title]){
   text-decoration: none !important;
   color: #B6B6B6;

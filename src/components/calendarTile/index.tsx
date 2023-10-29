@@ -9,6 +9,9 @@ export interface CalendarTileProps{
 
 const CalendarTile : React.FC<CalendarTileProps> = ({date,onClick})=>{
   const [isShowTileEvent,setShowTile] = useState(false)
+  const dateObj = new Date(date);
+  const day = dateObj.getDate(); 
+  const month = dateObj.getMonth();
 
   const whitelist = [23,24,25];
 
@@ -29,9 +32,19 @@ const CalendarTile : React.FC<CalendarTileProps> = ({date,onClick})=>{
     getWhiteList()
   },[isShowTileEvent])
   return (
-    isShowTileEvent ? <div className='absolute inset-0 bg-[red] left-9' onClick={onClick('https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png')}>
-      <Image src={'https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png'} className='w-full' width={500} height={500} alt='Event'></Image>
-    </div> : (<></>)
+    isShowTileEvent ?(
+    <div className="flex w-full h-full relative">
+      <div className="absolute m-2">{day}</div>
+    <div className='absolute inset-0 bg-[red] left-9' onClick={onClick('https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png')}>
+      <Image src={'https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png'} className='h-[100%] object-cover' width={500} height={500} alt='Event'></Image>
+    </div>
+    </div>
+    ) 
+    : (
+      <div className="flex w-full h-full relative">
+        <div className="absolute m-2">{day}</div>
+      </div>
+    )
   )
 }
 
