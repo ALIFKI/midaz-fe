@@ -2,6 +2,7 @@
 
 import GalleryImageSlider from '@/components/galleryslider/page';
 import NavbarComponents from '@/components/navbar';
+import { Poppins } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC, useState } from 'react'
@@ -9,6 +10,11 @@ import React, { FC, useState } from 'react'
 export interface GalleryDetailPageProps {
 
 }
+
+const poppins = Poppins({
+  subsets : ['latin'],
+  weight : '300'
+})
 
 const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
 
@@ -69,7 +75,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
               <path d="M12 19L5 12M5 12L12 5M5 12L19 12" stroke="#B6B6B6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <div className="ml-[0.5rem] text-zinc-400 text-xl font-light font-['Poppins'] leading-9 tracking-tight max-sm:text-[1rem]">A Tale of 5 Glamorous Days</div>
+          <div className={`ml-[0.5rem] text-zinc-400 text-xl font-light leading-9 tracking-tight max-sm:text-[1rem] ${poppins.className}`}>A Tale of 5 Glamorous Days</div>
         </Link>
       </div>
       <div className="mt-[1.75rem] w-full grid grid-gallery"
