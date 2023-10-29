@@ -34,15 +34,19 @@ const CalendarTile : React.FC<CalendarTileProps> = ({date,onClick})=>{
   return (
     isShowTileEvent ?(
     <div className="flex w-full h-full relative">
-      <div className="absolute m-2">{day}</div>
-    <div className='absolute inset-0 bg-[red] left-9' onClick={onClick('https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png')}>
+      <div className="absolute m-2 z-10 text-golden">
+        <div className="flex max-sm:bg-[#0B1D38] max-sm:rounded-[20px] max-sm:text-[12px] p-1">
+          {day}
+        </div>
+      </div>
+    <div className='absolute inset-0 bg-[red] left-9 max-sm:left-0 z-0' onClick={onClick('https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png')}>
       <Image src={'https://twelvesquared.cc/wp-content/uploads/2019/06/144-web-banner-event.png'} className='h-[100%] object-cover' width={500} height={500} alt='Event'></Image>
     </div>
     </div>
     ) 
     : (
       <div className="flex w-full h-full relative">
-        <div className="absolute m-2">{day}</div>
+        <div className="absolute m-2 max-sm:text-[12px]">{day}</div>
       </div>
     )
   )

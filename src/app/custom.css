@@ -95,19 +95,24 @@ abbr:where([title]){
   color: #FFF;
 }
 .react-calendar__month-view__days {
-  border: 2px solid #AB8D60;
+  /* border: 1px solid #AB8D60; */
+  padding: 2px;
+  background-color: #AB8D60;
   border-radius: 5px;
 }
 
 .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth{
-  border: 1px dashed #AB8D60;
+  border-left: 1px dashed #AB8D60;
+  border-bottom: 1px dashed #AB8D60;
 }
 .react-calendar__tile.react-calendar__month-view__days__day {
   height: 7.5rem;
-  border: 1px dashed #AB8D60;
+  border-left: 1px dashed #AB8D60;
+  border-bottom: 1px dashed #AB8D60;
   display: flex;
   font-family: 'Poppins';
   position: relative;
+  background-color: #0B1D38;
 }
 .react-calendar__tile.react-calendar__month-view__days__day abbr {
   /* margin: 16px; */

@@ -44,10 +44,11 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
           start={2}
           responsive={{
             0 : {
-              items : 2
+              items : 2,
+              margin : 10
             },
             768 : {
-              items : 2
+              items : 2,
             },
             1024 : {
               items : 2,
@@ -65,8 +66,8 @@ const ImageSlider: FC<ImageSliderProps> = ({})=>{
 `]}
           >
             {responsive.map((item) => (
-              <div key={item.id} className='w-[100%] flex justify-center items-center'>
-                  <Image src={imagebar} alt='slides image' height={300} width={500} className='w-[0]'></Image>
+              <div key={item.id} className='w-[100%] max-sm:h-[15rem] flex justify-center items-center'>
+                  <Image src={imagebar} alt='slides image' height={300} width={500} className='w-[0] max-sm:h-[100%] max-sm:object-cover'></Image>
               </div>
             ))}
           </OwlCarousel>

@@ -29,7 +29,11 @@ const EventPage = ()=> {
   return (
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
-        <Modal isOpen={isModalOpen} onClose={onCloseModal}>
+        <Modal 
+          isOpen={isModalOpen} 
+          onClose={onCloseModal}
+          modalContainerClass='max-sm:h-[80vh] max-sm:w-[90vw]'
+        >
           <div className='flex justify-center items-center overflow-hidden'>
             <Image unoptimized src={eventImage} alt='event banner' height={100} width={200} className={`h-[100%] w-[100%] object-cover`}></Image>
           </div>
