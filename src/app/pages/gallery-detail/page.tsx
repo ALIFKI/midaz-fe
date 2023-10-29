@@ -69,13 +69,13 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
-      <Modal isOpen={isModalOpen} modalContainerClass='h-auto w-auto max-h-[90vh] min-h-[40vh]'>
+      <Modal isOpen={isModalOpen} modalContainerClass='h-auto max-w-[60vw] min-w-[10vw] max-h-[90vh] relative'>
         <div className='flex justify-center items-center h-[2.5rem] w-[2.5rem] bg-white shadow-md rounded-[30px] absolute right-[-1.25rem] top-[-1.25rem] cursor-pointer' onClick={onCloseModal}>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 17L1 1M17 1L1 17" stroke="#01060D" strokeWidth="2"/>
           </svg>
         </div>
-        <Image height={100} width={100} alt='image' src={imageShown} className='w-[100%]'></Image>
+        <Image height={100} width={100} alt='image' src={imageShown} className='w-[100%] object-cover'></Image>
       </Modal>
       <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
         <div className="flex lg:mx-[60px] md:mx-[30px] max-sm:mx-[1rem]">
