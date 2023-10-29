@@ -72,7 +72,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
           <div className="ml-[0.5rem] text-zinc-400 text-xl font-light font-['Poppins'] leading-9 tracking-tight">A Tale of 5 Glamorous Days</div>
         </Link>
       </div>
-      <div className="mt-[1.75rem] w-full grid" style={{gridTemplateColumns: 'repeat(auto-fill,300px)', gridAutoRows : 'minmax(20px,auto)',justifyContent : 'center',gridGap : '20px',margin : '0 auto'}}>
+      <div className="mt-[1.75rem] w-full grid" style={{gridTemplateColumns: 'repeat(auto-fill,12%)', gridAutoRows : 'minmax(20px,auto)',justifyContent : 'center',gridGap : '20px',margin : '0 auto'}}>
         {
           images.map((image,index)=>{
             return (

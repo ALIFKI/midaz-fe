@@ -15,30 +15,30 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
   const [isMenuOpen,setMenuOpen] = useState<boolean>(false)
   return (
     <div className="">
-      <div className="z-[99] flex flex-row mx-[1rem] mt-6 lg:mx-[100px] lg:mt-[70px] md:mx-[80px] md:mt-10 justify-between items-center relative bg-[#0D1B37]">
+      <div className="z-[99] flex flex-row mx-[1rem] mt-6 lg:mx-[60px] lg:mt-[30px] md:mx-[50px] md:mt-10 justify-between items-center relative bg-[#0D1B37]">
         <div className="brand">
           {/* <Logo></Logo> */}
           <Link href={'/'}>
           <Image
             priority
-            className='max-sm:w-[5rem]'
+            className='w-[6rem] max-sm:w-[5rem]'
             src={Logo}
             alt="Follow us on Twitter">
           </Image>
           </Link>
         </div>
         <div className="menu hidden md:hidden lg:flex">
-          <div className="flex flex-row gap-20">
-            <Link href="/pages/event" className='text-[16px] mx-4 text-center uppercase text-golden'>
+          <div className="flex flex-row gap-14">
+            <Link href="/pages/event" className='text-[14px] mx-4 text-center uppercase text-golden'>
               Event
             </Link>
-            <Link href="/pages/about" className='text-[16px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/about" className='text-[14px] mx-4 text-center uppercase text-golden'>
               About
             </Link>
-            <Link href="/pages/gallery" className='text-[16px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/gallery" className='text-[14px] mx-4 text-center uppercase text-golden'>
               Gallery
             </Link>
-            <Link href="/pages/contact" className='text-[16px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/contact" className='text-[14px] mx-4 text-center uppercase text-golden'>
               Contact
             </Link>
           </div>
