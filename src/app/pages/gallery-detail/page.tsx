@@ -51,7 +51,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
       <NavbarComponents></NavbarComponents>
 
       <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
-        <div className="flex lg:mx-[60px] md:mx-[30px]">
+        <div className="flex lg:mx-[60px] md:mx-[30px] max-sm:mx-[1rem]">
           <div className="flex flex-row">
             <div className={`${getIsActive('photos').border} mr-4 cursor-pointer`} onClick={setIsActiveMenu('photos')}>
               <div className={`my-2 text-center ${getIsActive('photos').color} text-base font-normal font-['Linden Hill'] uppercase leading-[21px] tracking-widest`}>Photos</div>
@@ -62,17 +62,18 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
           </div>
         </div>
       </div>
-      <div className="lg:mx-[100px] md:mx-[80px]">
-        <Link href={'/pages/gallery'} className="flex w-full justify-start items-center mt-[32px]">
+      <div className="lg:mx-[60px] md:mx-[30px]">
+        <Link href={'/pages/gallery'} className="flex w-full justify-start items-center mt-[32px] max-sm:mx-[1rem]">
           <div className="arrow cursor-pointer">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 19L5 12M5 12L12 5M5 12L19 12" stroke="#B6B6B6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <div className="ml-[0.5rem] text-zinc-400 text-xl font-light font-['Poppins'] leading-9 tracking-tight">A Tale of 5 Glamorous Days</div>
+          <div className="ml-[0.5rem] text-zinc-400 text-xl font-light font-['Poppins'] leading-9 tracking-tight max-sm:text-[1rem]">A Tale of 5 Glamorous Days</div>
         </Link>
       </div>
-      <div className="mt-[1.75rem] w-full grid" style={{gridTemplateColumns: 'repeat(auto-fill,12%)', gridAutoRows : 'minmax(20px,auto)',justifyContent : 'center',gridGap : '20px',margin : '0 auto'}}>
+      <div className="mt-[1.75rem] w-full grid grid-gallery"
+      >
         {
           images.map((image,index)=>{
             return (

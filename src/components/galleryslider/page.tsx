@@ -1,6 +1,6 @@
 'use client'
 import { GalleryPageProps } from '@/app/pages/gallery/page'
-import React, { FC,useEffect } from 'react'
+import React, { FC,useEffect, useRef } from 'react'
 var $ = require("jquery");
 if (typeof window !== "undefined") {
    window.$ = window.jQuery = require("jquery");
@@ -26,7 +26,7 @@ const poppins = Poppins({
 
 const GalleryImageSlider : FC<GalleryPageProps> = ({})=>{
   useEffect(() => {
-    
+    console.log(OwlCarousel)
   }, [])
   
 

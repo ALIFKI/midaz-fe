@@ -31,12 +31,20 @@ const GalleryPage : FC<GalleryPageProps> = ({})=>{
     setIsActive(menu);
   }
 
+  const onClickPrev = ()=>{
+    var owl = $('.owl-carousel');
+    owl.trigger('prev.owl.carousel');
+  }
+  const onClickNext = ()=>{
+    var owl = $('.owl-carousel');
+    owl.trigger('next.owl.carousel');
+  }
   return (
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
       <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
-        <div className="flex lg:mx-[60px] md:mx-[30px]">
+        <div className="flex lg:mx-[60px] md:mx-[30px] max-sm:mx-[1rem]">
           <div className="flex flex-row">
             <div className={`${getIsActive('photos').border} mr-4 cursor-pointer`} onClick={setIsActiveMenu('photos')}>
               <div className={`my-2 text-center ${getIsActive('photos').color} text-base font-normal font-['Linden Hill'] uppercase leading-[21px] tracking-widest`}>Photos</div>
@@ -47,15 +55,15 @@ const GalleryPage : FC<GalleryPageProps> = ({})=>{
           </div>
         </div>
       </div>
-      <div className="lg:mx-[60px] md:mx-[30px]">
+      <div className="lg:mx-[60px] md:mx-[30px] max-sm:mx-[1rem]">
         <div className="flex w-full justify-between items-center mt-[32px]">
-          <div className="arrow cursor-pointer">
+          <div className="arrow cursor-pointer" onClick={onClickPrev}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 19L5 12M5 12L12 5M5 12L19 12" stroke="#B6B6B6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div className="w-2/3 text-center text-zinc-400 text-xl font-light font-['Poppins'] leading-9 tracking-tight">2023 MIDAZ EVENT </div>
-          <div className="arrow cursor-pointer">
+          <div className="arrow cursor-pointer" onClick={onClickNext}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 19L19 12M19 12L12 5M19 12L5 12" stroke="#B6B6B6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>

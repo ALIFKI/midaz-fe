@@ -20,6 +20,14 @@
   /* CSS styles for large screens */
 }
 
+.grid-gallery {
+  grid-template-columns: repeat(auto-fill, 12%);
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 
 .react-calendar__navigation__label {
   margin: 1rem !important;
