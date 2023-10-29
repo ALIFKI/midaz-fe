@@ -35,9 +35,9 @@ const EventPage = ()=> {
           </div>
         </Modal>
         <div className="flex justify-center items-center mt-10 flex-col">
-          <div className="text-golden text-4xl font-normal font-['Linden Hill'] tracking-wider">Upcoming Event</div>
+          <div className="text-golden text-4xl font-normal font-['Linden Hill'] tracking-wider max-sm:text-[1.5rem]">Upcoming Event</div>
         </div>
-        <div className="flex flex-row w-full mt-5 justify-center items-center">
+        <div className="lg:flex flex-row w-full mt-5 justify-center items-center max-sm:w-full max-sm:block px-[1rem] max-sm:mt-0">
           <Calendar
             tileClassName={'flex '+poppins.className}
             prev2Label={<></>}

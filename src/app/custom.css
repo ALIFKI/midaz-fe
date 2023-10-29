@@ -3,6 +3,22 @@
   src: url('../assets/fonts/Linden_Hill/LindenHill-Regular.ttf') format('ttf'),
   url('../assets/fonts/Linden_Hill/LindenHill-Italic.ttf') format('ttf'),
 }
+/* Define a custom breakpoint for small screens */
+@media screen and (max-width: 640px) {
+  .react-calendar__tile.react-calendar__month-view__days__day{
+    height: 5rem !important;
+  }
+}
+
+/* Define a custom breakpoint for medium screens */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  /* CSS styles for medium screens */
+}
+
+/* Define a custom breakpoint for large screens */
+@media screen and (min-width: 1025px) {
+  /* CSS styles for large screens */
+}
 
 
 .owl-item {
