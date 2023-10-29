@@ -115,7 +115,8 @@ const Maps: NextPage = () => {
         zoom={14}
         center={mapCenter}
         mapTypeId={google.maps.MapTypeId.ROADMAP}
-        mapContainerStyle={{ width: '420px', height: '355px',borderRadius : '10px' }}
+        mapContainerClassName='w-[420px] max-sm:w-full'
+        mapContainerStyle={{height: '355px',borderRadius : '10px' }}
         onLoad={() => console.log('Map Component Loaded...')}
       />
     </div>
