@@ -34,8 +34,8 @@ export default function Home() {
   const playVideo = () => {
     console.log('trigger play')
     setVideoPlay(isVideoPlay+1);
-    const video = document.querySelector('#v0');
-    const video1 = document.querySelector('#v1');
+    const video = document.querySelector('#v0') as HTMLVideoElement;
+    const video1 = document.querySelector('#v1') as HTMLVideoElement;
     console.log(video)
     try {
       if (video) {
