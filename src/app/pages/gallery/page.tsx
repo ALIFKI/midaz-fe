@@ -35,8 +35,8 @@ const GalleryPage : FC<GalleryPageProps> = ({})=>{
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
-      <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[6rem]">
-        <div className="flex lg:mx-[100px] md:mx-[80px]">
+      <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
+        <div className="flex lg:mx-[60px] md:mx-[30px]">
           <div className="flex flex-row">
             <div className={`${getIsActive('photos').border} mr-4 cursor-pointer`} onClick={setIsActiveMenu('photos')}>
               <div className={`my-2 text-center ${getIsActive('photos').color} text-base font-normal font-['Linden Hill'] uppercase leading-[21px] tracking-widest`}>Photos</div>
@@ -47,7 +47,7 @@ const GalleryPage : FC<GalleryPageProps> = ({})=>{
           </div>
         </div>
       </div>
-      <div className="lg:mx-[100px] md:mx-[80px]">
+      <div className="lg:mx-[60px] md:mx-[30px]">
         <div className="flex w-full justify-between items-center mt-[32px]">
           <div className="arrow cursor-pointer">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

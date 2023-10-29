@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../../assets/icon/Web/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 
 export interface NavbarComponentsProps {
@@ -13,6 +14,17 @@ export interface NavbarComponentsProps {
 
 const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
   const [isMenuOpen,setMenuOpen] = useState<boolean>(false)
+  const routerPathName = usePathname();
+
+  useEffect(()=>{
+    console.log(routerPathName)
+  },[])
+
+  const getActive = (path:string)=>{
+    if (routerPathName.includes(path)){
+      return (<div className='absolute left-[50%] translate-x-[-50%] w-[30px] h-[1px] bg-golden'></div>)
+    }
+  }
   return (
     <div className="">
       <div className="z-[99] flex flex-row mx-[1rem] mt-6 lg:mx-[60px] lg:mt-[30px] md:mx-[50px] md:mt-10 justify-between items-center relative bg-[#0D1B37]">
@@ -29,17 +41,21 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
         </div>
         <div className="menu hidden md:hidden lg:flex">
           <div className="flex flex-row gap-14">
-            <Link href="/pages/event" className='text-[14px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/event" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
               Event
+              {getActive('event')}
             </Link>
-            <Link href="/pages/about" className='text-[14px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/about" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
               About
+              {getActive('about')}
             </Link>
-            <Link href="/pages/gallery" className='text-[14px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/gallery" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
               Gallery
+              {getActive('gallery')}
             </Link>
-            <Link href="/pages/contact" className='text-[14px] mx-4 text-center uppercase text-golden'>
+            <Link href="/pages/contact" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
               Contact
+              {getActive('contact')}
             </Link>
           </div>
         </div>

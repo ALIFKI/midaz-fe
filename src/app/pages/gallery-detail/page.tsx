@@ -50,8 +50,8 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
-      <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[6rem]">
-        <div className="flex lg:mx-[100px] md:mx-[80px]">
+      <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
+        <div className="flex lg:mx-[60px] md:mx-[30px]">
           <div className="flex flex-row">
             <div className={`${getIsActive('photos').border} mr-4 cursor-pointer`} onClick={setIsActiveMenu('photos')}>
               <div className={`my-2 text-center ${getIsActive('photos').color} text-base font-normal font-['Linden Hill'] uppercase leading-[21px] tracking-widest`}>Photos</div>
@@ -76,8 +76,8 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
         {
           images.map((image,index)=>{
             return (
-              <div key={index} className={`mt-[28px]`} style={{gridRowEnd : `span ${index+2}`}}>
-                <Image src={image} alt='hello' height={'1000'} width={'1000'} className='h-full w-full object-cover'></Image>
+              <div key={index} className={`mt-[28px] overflow-hidden cursor-pointer`} style={{gridRowEnd : `span ${index+2}`}}>
+                <Image src={image} alt='hello' height={'1000'} width={'1000'} className='h-full w-full object-cover transform hover:scale-150 transition-transform'></Image>
               </div>
             )
           })
