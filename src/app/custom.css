@@ -3,10 +3,23 @@
   src: url('../assets/fonts/Linden_Hill/LindenHill-Regular.ttf') format('ttf'),
   url('../assets/fonts/Linden_Hill/LindenHill-Italic.ttf') format('ttf'),
 }
+
+.grid-gallery {
+  grid-template-columns: repeat(auto-fill, 12%);
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 /* Define a custom breakpoint for small screens */
 @media screen and (max-width: 640px) {
   .react-calendar__tile.react-calendar__month-view__days__day{
     height: 5rem !important;
+  }
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-gap: 6px;
   }
 }
 
@@ -18,14 +31,6 @@
 /* Define a custom breakpoint for large screens */
 @media screen and (min-width: 1025px) {
   /* CSS styles for large screens */
-}
-
-.grid-gallery {
-  grid-template-columns: repeat(auto-fill, 12%);
-  grid-auto-rows: minmax(20px, auto);
-  grid-gap: 10px;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 

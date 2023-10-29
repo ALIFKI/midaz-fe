@@ -1,6 +1,7 @@
 'use client'
 
 import GalleryImageSlider from '@/components/galleryslider/page';
+import Modal from '@/components/modal';
 import NavbarComponents from '@/components/navbar';
 import { Poppins } from 'next/font/google';
 import Image from 'next/image';
@@ -18,8 +19,20 @@ const poppins = Poppins({
 
 const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
 
-  const [isActive,setIsActive] = useState<string>('photos')
+  const [isActive,setIsActive] = useState<string>('photos');
+  const [isModalOpen,setIsModalOpen] = useState<boolean>(false);
+  const [imageShown,setImageShown] = useState<string>('');
 
+  
+  const onCloseModal = ()=>{
+    setIsModalOpen(!isModalOpen)
+  }
+
+
+  const onClickImage = (image:string)=>()=>{
+    setImageShown(image);
+    setIsModalOpen(true);
+  }
   const getIsActive = (menu:string)=>{
     if(menu == isActive){
       return {
@@ -56,6 +69,14 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
+      <Modal isOpen={isModalOpen} modalContainerClass='h-auto w-auto max-w-[90vw] min-w-[20vw]'>
+        <div className='flex justify-center items-center h-[2.5rem] w-[2.5rem] bg-white shadow-md rounded-[30px] absolute right-[-1.25rem] top-[-1.25rem] cursor-pointer' onClick={onCloseModal}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 17L1 1M17 1L1 17" stroke="#01060D" strokeWidth="2"/>
+          </svg>
+        </div>
+        <Image height={100} width={100} alt='image' src={imageShown} className='w-[100%]'></Image>
+      </Modal>
       <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[4rem]">
         <div className="flex lg:mx-[60px] md:mx-[30px] max-sm:mx-[1rem]">
           <div className="flex flex-row">
@@ -83,7 +104,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
         {
           images.map((image,index)=>{
             return (
-              <div key={index} className={`mt-[28px] overflow-hidden cursor-pointer`} style={{gridRowEnd : `span ${index+2}`}}>
+              <div key={index} className={`mt-[28px] overflow-hidden cursor-pointer`} style={{gridRowEnd : `span ${index+2}`}} onClick={onClickImage(image)}>
                 <Image src={image} alt='hello' height={'1000'} width={'1000'} className='h-full w-full object-cover transform hover:scale-150 transition-transform'></Image>
               </div>
             )
