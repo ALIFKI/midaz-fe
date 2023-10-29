@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 const ContactPage = ()=> {
   return (
-    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
         <div className="flex justify-center items-center mt-10 flex-col">
           <div className='text-[36px] text-golden'> Bookings <span className='text-white'>&</span> Enquiries </div>

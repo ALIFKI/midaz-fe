@@ -19,7 +19,7 @@ export interface AboutProps {
 
 const About : FC<AboutProps> = ({}) => {
   return (
-    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
       <div className="flex flex-col justify-center items-center mt-[7rem]">
         <span className={poppins.className+' text-[1.2rem] flex text-golden text-center'}>We aspire to lead the F&B lifestyle bar industry <br />by setting trends and reinventing the art of socializing. </span>

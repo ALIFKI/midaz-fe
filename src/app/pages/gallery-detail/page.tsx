@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC, useState } from 'react'
 
-
 export interface GalleryDetailPageProps {
 
 }
@@ -48,7 +47,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
   }
 
   return (
-    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
       <NavbarComponents></NavbarComponents>
 
       <div className="flex w-full border-b-[#19335A] border-b-[1px] mt-[6rem]">

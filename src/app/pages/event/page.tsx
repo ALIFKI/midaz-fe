@@ -27,7 +27,7 @@ const EventPage = ()=> {
   }
 
   return (
-    <div className='bg-[#0D1933] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
         <Modal isOpen={isModalOpen} onClose={onCloseModal}>
           <div className='flex justify-center items-center'>

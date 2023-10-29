@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         golden : '#DAC18D',
+        bgPrimary : '#0E1B37',
       },
       // backgroundImage: {
       //   'cement-pattren': "url('../assets/images/bg_pattern.jpeg')",
