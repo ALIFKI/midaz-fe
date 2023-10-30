@@ -52,6 +52,7 @@ const EventPage = ()=> {
         <div className="flex w-full justify-center">
           <div className="lg:flex w-[45%] flex-row justify-center items-center max-sm:w-full max-sm:block px-[1rem] max-sm:mt-0">
             <Calendar
+              className={`${poppins.className}`}
               tileClassName={'flex '+poppins.className}
               prev2Label={<></>}
               next2Label={<></>}
