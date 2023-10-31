@@ -89,8 +89,8 @@ export default function Home() {
         {/* mobile video */}
         <div className="lg:hidden flex h-[100vh] w-full justify-center items-center relative">
           <div className="flex h-[50vh] relative justify-center items-center flex-col mt-10 w-full">
-            <video muted={true} playsInline={true} id="v1" tabIndex={0} preload="metadata" className='w-full flex justify-center items-center z-0 relative' controls={false}>
-              <source type="video/mp4" src={"/midaz_video_mobile.mp4"}></source>
+            <video muted={true} playsInline={true} id="v1" tabIndex={0} preload="auto" className='w-full flex justify-center items-center z-0 relative' controls={false}>
+              <source type='video/mp4' src={'/midaz_video_mobile.mp4'}></source>
             </video>
             <span className={`flex flex-col lg:hidden absolute translate-x-[-50%] text-[1rem] z-20 left-[50%] transition-all w-[90%] text-center ${animatedClassMobile} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
             <div className="flex justify-center items-center flex-col fixed left-[50%] translate-x-[-50%] bottom-[1%]">
