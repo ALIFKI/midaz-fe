@@ -4,6 +4,12 @@
   url('../assets/fonts/Linden_Hill/LindenHill-Italic.ttf') format('ttf'),
 }
 
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('ttf'),
+    url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('ttf'),
+}
+
 .grid-gallery {
   grid-template-columns: repeat(auto-fill, 12%);
   grid-auto-rows: minmax(20px, auto);
@@ -42,7 +48,7 @@
   font-size: 1rem;
   /* color: white; */
   @apply text-white;
-  font-family: 'Poppins';
+  font-family: 'Poppins-Regular';
 }
 
 .owl-item {
@@ -79,7 +85,7 @@ body {
 
 .react-calendar__navigation__label {
   flex-grow: 0 !important;
-  font-family: 'Poppins';
+  font-family: 'Poppins-Regular';
   color: #FFF;
   margin : 2rem;
 }
