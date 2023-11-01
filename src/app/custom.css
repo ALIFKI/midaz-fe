@@ -40,6 +40,9 @@
 
 .react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
   font-size: 1rem;
+  /* color: white; */
+  @apply text-white;
+  font-family: 'Poppins';
 }
 
 .owl-item {
