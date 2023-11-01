@@ -85,6 +85,9 @@ export default function Home() {
             <span className='text-golden'>SWIPE TO PLAY VIDEO</span>
             <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player>
           </div>
+          <div className="fixed flex bg-[#1B2C45] h-[3.75rem] w-[3.75rem] lg:h-[80px] lg:w-[80px] justify-center items-center rounded-[40px] max-lg:bottom-[80px] md:bottom-4 right-[10px]">
+            <Image src={'/ic_wa.png'} width={40} height={40} alt={''} className='max-sm:h-[30px] max-sm:w-[30px]'></Image>
+          </div>
         </div>
         {/* mobile video */}
         <div className="lg:hidden flex h-[100vh] w-full justify-center items-center relative">
