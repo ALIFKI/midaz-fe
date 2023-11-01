@@ -78,7 +78,7 @@ const ContactPage = ()=> {
                   </svg>
                 </div>
                 <div className={`${poppins.className} text-[#B6B6B6] text-[12px] max-sm:text-center`}>
-                  Sosial media
+                  Social media
                 </div>
               </div>
               {/* list end */}
