@@ -48,7 +48,7 @@
   font-size: 1rem;
   /* color: white; */
   @apply text-white;
-  font-family: 'Poppins-Regular';
+  /* font-family: 'Poppins-Regular'; */
 }
 
 .owl-item {
@@ -85,7 +85,7 @@ body {
 
 .react-calendar__navigation__label {
   flex-grow: 0 !important;
-  font-family: 'Poppins-Regular';
+  /* font-family: 'Poppins-Regular'; */
   color: #FFF;
   margin : 2rem;
 }
@@ -132,7 +132,7 @@ abbr:where([title]){
   border-left: 1px dashed #AB8D60;
   border-bottom: 1px dashed #AB8D60;
   display: flex;
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
   position: relative;
   background-color: #0B1D38;
 }
