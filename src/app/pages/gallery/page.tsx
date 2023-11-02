@@ -76,7 +76,7 @@ const GalleryPage : FC<GalleryPageProps> = ({})=>{
           </div>
         </div>
       </div>
-      <div className="flex mt-[1.75rem]">
+      <div className="flex mt-[1.75rem] mb-5">
         <GalleryImageSlider></GalleryImageSlider>
       </div>
     </div>
