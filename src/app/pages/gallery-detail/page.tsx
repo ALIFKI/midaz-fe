@@ -66,7 +66,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
   }
 
   return (
-    <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
+    <div className='bg-[#0D1B37] relative min-h-screen w-full overflow-hidden'>
       <NavbarComponents></NavbarComponents>
 
       <Modal isOpen={isModalOpen} modalContainerClass='h-auto max-w-[60vw] min-w-[10vw] max-h-[90vh] relative'>
