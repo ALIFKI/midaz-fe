@@ -93,7 +93,7 @@ const GalleryDetailPage : FC<GalleryDetailPageProps> = ({})=>{
         <Link href={'/pages/gallery'} className="flex w-full justify-start items-center mt-[32px] max-sm:mx-[1rem]">
           <div className="arrow cursor-pointer">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 19L5 12M5 12L12 5M5 12L19 12" stroke="#B6B6B6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 19L5 12M5 12L12 5M5 12L19 12" stroke="#B6B6B6" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div className={`ml-[0.5rem] text-zinc-400 text-xl font-light leading-9 tracking-tight max-sm:text-[1rem] ${poppins.className}`}>A Tale of 5 Glamorous Days</div>
