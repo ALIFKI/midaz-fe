@@ -41,19 +41,19 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
         </div>
         <div className="menu hidden md:hidden lg:flex">
           <div className="flex flex-row gap-14">
-            <Link href="/pages/event" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
+            <Link href="/pages/event" className='text-[14px] mx-4 text-center uppercase text-golden relative tracking-[0.2rem]'>
               Event
               {getActive('event')}
             </Link>
-            <Link href="/pages/about" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
+            <Link href="/pages/about" className='text-[14px] mx-4 text-center uppercase text-golden relative tracking-[0.2rem]'>
               About
               {getActive('about')}
             </Link>
-            <Link href="/pages/gallery" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
+            <Link href="/pages/gallery" className='text-[14px] mx-4 text-center uppercase text-golden relative tracking-[0.2rem]'>
               Gallery
               {getActive('gallery')}
             </Link>
-            <Link href="/pages/contact" className='text-[14px] mx-4 text-center uppercase text-golden relative'>
+            <Link href="/pages/contact" className='text-[14px] mx-4 text-center uppercase text-golden relative tracking-[0.2rem]'>
               Contact
               {getActive('contact')}
             </Link>

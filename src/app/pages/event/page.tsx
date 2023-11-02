@@ -32,7 +32,7 @@ const EventPage = ()=> {
         <Modal 
           isOpen={isModalOpen} 
           onClose={onCloseModal}
-          modalContainerClass='max-sm:h-[80vh] max-sm:w-[90vw]'
+          modalContainerClass='max-sm:h-[70vh] max-sm:w-[90vw] max-sm:mt-[-15%]'
         >
           <div className='flex justify-center items-center h-[2.5rem] w-[2.5rem] bg-white shadow-md rounded-[30px] absolute right-[-1.25rem] top-[-1.25rem] cursor-pointer' onClick={onCloseModal}>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
