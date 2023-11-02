@@ -25,13 +25,6 @@ const poppins = Poppins({
 })
 
 const GalleryImageSlider : FC<GalleryPageProps> = ({})=>{
-  useEffect(() => {
-    console.log(OwlCarousel)
-  }, [])
-  
-
-
-
   const responsive = [
         {
           "id": 2,
@@ -79,7 +72,7 @@ const GalleryImageSlider : FC<GalleryPageProps> = ({})=>{
           >
             {responsive.map((item) => (
               // <Link key={item.id} href={'/pages/gallery-detail'}>
-                <div key={item.id} className='relative w-full h-[43rem] flex justify-center items-center cursor-pointer'>
+                <div key={item.id} className='relative w-full h-[43rem] flex justify-center items-center cursor-pointer overflow-hidden'>
                   <Link key={item.id} href={'/pages/gallery-detail'} className='h-full w-full'>
                     <div className="z-10 absolute inset-0 flex justify-center items-center bg-[rgba(0,2,4,0.7)] hover:opacity-[1] opacity-0">
                       <div className={`${poppins.className} text-center text-[#B6B6B6] text-[1.8rem]`}>{item.title}</div>
