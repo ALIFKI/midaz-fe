@@ -78,14 +78,16 @@ const GalleryImageSlider : FC<GalleryPageProps> = ({})=>{
           nav={true}
           >
             {responsive.map((item) => (
-              <Link key={item.id} href={'/pages/gallery-detail'}>
-                <div className='relative w-full h-[43rem] flex justify-center items-center cursor-pointer'>
+              // <Link key={item.id} href={'/pages/gallery-detail'}>
+                <div key={item.id} className='relative w-full h-[43rem] flex justify-center items-center cursor-pointer'>
+                  <Link key={item.id} href={'/pages/gallery-detail'} className='h-full w-full'>
                     <div className="z-10 absolute inset-0 flex justify-center items-center bg-[rgba(0,2,4,0.7)] hover:opacity-[1] opacity-0">
                       <div className={`${poppins.className} text-center text-[#B6B6B6] text-[1.8rem]`}>{item.title}</div>
                     </div>
                     <Image src={item.imageUrl} alt='slides image' height={300} width={500} className='w-full h-full object-cover'></Image>
+                  </Link>
                 </div>
-              </Link>
+              // </Link>
             ))}
           </OwlCarousel>
     </div>
