@@ -1,5 +1,4 @@
 'use client'
-
 import GalleryImageSlider from '@/components/galleryslider/page';
 import NavbarComponents from '@/components/navbar';
 import { Poppins } from 'next/font/google';

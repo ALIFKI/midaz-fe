@@ -52,10 +52,12 @@ const GalleryImageSlider : FC<GalleryPageProps> = ({})=>{
         }
       ];
   return (
-    <div className="flex">
+    <div className="flex w-full">
         <OwlCarousel
           className='gallery-carousel'
           start={2}
+          responsiveClass={true}
+          autoWidth={false}
           responsive={{
             0 : {
               items : 2
