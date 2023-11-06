@@ -79,11 +79,11 @@ export default function Home() {
             <video muted={true} playsInline={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
               <source type="video/mp4" src={"/midaz_video_desktop.mov"}></source>
             </video>
-            <span className={`max-sm:hidden absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
+            <span className={`max-sm:hidden absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay} text-white`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
           <div className={`flex justify-center items-center flex-col ml-[30px] fixed bottom-0 transition-all ${styleSwipe}`}>
-            <span className='text-golden'>SWIPE TO PLAY VIDEO</span>
-            <Player className='h-[50px]' src={lottieJSON} autoplay loop ></Player>
+            <span className='text-golden text-[14px]'>SWIPE TO PLAY VIDEO</span>
+            <Player className='h-[34px]' src={lottieJSON} autoplay loop ></Player>
           </div>
           <div className="fixed flex bg-[#1B2C45] h-[3.75rem] w-[3.75rem] lg:h-[80px] lg:w-[80px] justify-center items-center rounded-[40px] max-lg:bottom-[80px] md:bottom-4 right-[10px]">
             <Image src={'/ic_wa.png'} width={40} height={40} alt={''} className='max-sm:h-[30px] max-sm:w-[30px]'></Image>

@@ -13,7 +13,7 @@ const ContactPage = ()=> {
     <div className='bg-[#0D1B37] relative min-h-screen overflow-scroll w-full'>
         <NavbarComponents></NavbarComponents>
         <div className="flex justify-center items-center mt-10 flex-col max-sm:mx-8">
-          <div className='text-[36px] text-golden max-sm:text-[1.5rem]'> Bookings <span className='text-white'>&</span> Enquiries </div>
+          <div className='text-[1.5rem] text-golden max-sm:text-[1.5rem]'> Bookings <span className='text-white'>&</span> Enquiries </div>
           <div className={"lg:text-md lg:text-white max-sm:text-center max-sm:text-[1rem] max-sm:text-[#B6B6B6] "+poppins.className}>Midaz Club & Lounge boasts a dynamic and diverse entertainment lineup that caters to all tastes.</div>
         </div>
 
