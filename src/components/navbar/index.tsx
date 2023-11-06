@@ -77,7 +77,7 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
           }
         </div>
       </div>
-      <div className={`menu-mobile-list absolute left-0 right-0 bg-[rgba(0,0,0,0.5)] mt-16 lg:hidden z-20 bottom-0 top-0 transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-[1]' : 'opacity-0 z-[-100]'}`}>
+      <div className={`menu-mobile-list absolute left-0 right-0 bg-[rgba(0,0,0,0.5)] mt-16 h-[100vh] lg:hidden z-20 bottom-0 top-0 transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-[1]' : 'opacity-0 z-[-100]'}`}>
         <div className="flex flex-col w-full bg-[#0D1B37] py-10">
           <Link href="/" className='text-[0.875rem] mx-4 text-left uppercase text-golden py-[1rem] border-b border-[#173159]'>
             Home
