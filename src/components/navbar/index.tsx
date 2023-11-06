@@ -26,7 +26,9 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
     }
   }
   return (
-    <div className="">
+    <>
+    <div className="h-[3.5rem]"></div>
+    <div className="d-flex fixed inset-0 bg-[#0D1B37] max-h-20 z-[99]">
       <div className="z-[99] flex flex-row mx-[1rem] mt-6 lg:mx-[60px] lg:mt-[30px] md:mx-[50px] md:mt-10 justify-between items-center relative bg-[#0D1B37]">
         <div className="brand">
           {/* <Logo></Logo> */}
@@ -95,6 +97,7 @@ const NavbarComponents : React.FC<NavbarComponentsProps> =  ()=>{
         </div>
       </div>
     </div>
+    </>
   )
 }
 
