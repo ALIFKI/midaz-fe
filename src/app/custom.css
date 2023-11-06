@@ -127,6 +127,50 @@ abbr:where([title]){
   border-left: 1px dashed #AB8D60;
   border-bottom: 1px dashed #AB8D60;
 }
+
+/* selector child grid calendar */
+
+.react-calendar__month-view__days > :nth-child(1) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(8) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(15) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(22) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(29) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(36) {
+  border-left: none !important;
+}
+.react-calendar__month-view__days> :nth-child(29) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(30) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(31) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(32) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(33) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(34) {
+  border-bottom: none !important;
+}
+.react-calendar__month-view__days> :nth-child(35) {
+  border-bottom: none !important;
+}
+
+/* end selector grid  */
 .react-calendar__tile.react-calendar__month-view__days__day {
   height: 7.5rem;
   border-left: 1px dashed #AB8D60;
