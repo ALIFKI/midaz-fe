@@ -43,11 +43,13 @@ const EventPage = ()=> {
               <Image unoptimized src={eventImage} alt='event banner' height={100} width={200} className={`h-[100%] w-[100%] object-cover`}></Image>
             </div>
           <div className={`cursor-pointer p-2 flex min-h-[1.6rem] min-w-[6.5rem] bg-golden rounded-[40px] ${poppins.className} shadow-sm absolute bottom-[-1rem] left-[50%] translate-x-[-50%]`}>
-            <span className='mx-2 text-[#353535]'>Click to RSVP</span>
+            <a href='https://wa.me/+6282210701617' target="_blank" rel="noopener noreferrer">
+              <span className='mx-2 text-[#353535]'>Click to RSVP</span>
+            </a>
           </div>
         </Modal>
         <div className="flex justify-center items-center mt-10 flex-col">
-          <div className="text-golden text-[1.5rem] font-normal font-['Linden Hill'] tracking-wider max-sm:text-[1.5rem]">Upcoming Event</div>
+          <div className="text-golden text-[2rem] font-normal font-['Linden Hill'] tracking-wider max-sm:text-[1.5rem]">Upcoming Event</div>
         </div>
         <div className="flex w-full justify-center">
           <div className="lg:flex w-[45%] flex-row justify-center items-center max-sm:w-full max-sm:block px-[1rem] max-sm:mt-0">

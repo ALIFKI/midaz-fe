@@ -1234,13 +1234,13 @@ const About : FC<AboutProps> = ({}) => {
       <section className="flex w-full px-[1rem]">
         <div className="flex w-full justify-center items-center mb-10">
           <div className="flex w-11/12 md:gap-10 max-sm:w-full max-sm:flex-col">
-            <div className={"max-sm:mt-5 max-sm:text-center leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
+            <div className={"max-sm:mt-5 max-sm:text-center text-[14px] leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
             Midaz will regularly host live music performances spanning various genres, from soulful jazz to high-energy R&B, ensuring that guests are treated to an array of musical styles that resonate with their preferences. The spacious dance floor and cozy seating areas provide the perfect ambiance for patrons to groove to the rhythms of top-notch live acts.
             </div>
-            <div className={"max-sm:mt-5 max-sm:text-center leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
+            <div className={"max-sm:mt-5 max-sm:text-center max-sm:text-[14px] leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
               Midaz at Senayan Golf restaurant offers a delectable menu that caters to the most discerning palates. Whether you're joining us for lunch or dinner, our talented culinary team ensures that every dish is a masterpiece. From international flavors to local delicacies, Midaz's menu is a culinary journey that complements the night's entertainment.
             </div>
-            <div className={"max-sm:mt-5 max-sm:text-center leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
+            <div className={"max-sm:mt-5 max-sm:text-center max-sm:text-[14px] leading-[28px] flex text-justify text-[#B6B6B6] "+poppins.className}>
               Wine connoisseurs will be delighted to explore Midaz's impressive wine cellar, which boasts a curated selection of fine wines from around the world. Whether you're a seasoned oenophile or simply looking to enjoy a glass with your meal, Midaz's wine cellar offers an extensive collection to satisfy every wine lover's desire.
             </div>
           </div>

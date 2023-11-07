@@ -148,25 +148,8 @@ abbr:where([title]){
 .react-calendar__month-view__days> :nth-child(36) {
   border-left: none !important;
 }
-.react-calendar__month-view__days> :nth-child(29) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(30) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(31) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(32) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(33) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(34) {
-  border-bottom: none !important;
-}
-.react-calendar__month-view__days> :nth-child(35) {
+
+.react-calendar__month-view__days :nth-last-child(-n+7) {
   border-bottom: none !important;
 }
 
