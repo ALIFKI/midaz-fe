@@ -25,10 +25,10 @@ export default function Home() {
         console.log('video is playing');
       }else{
         console.log(isVideoPlay,'yes')
-        setTimeout(() => {
-          setAnimatedClass('opacity-1 bottom-[23%]')
-          setAnimatedClassMobile('opacity-1 bottom-[-3%]')
-        }, 31000);
+        // setTimeout(() => {
+        //   setAnimatedClass('opacity-1 bottom-[23%]')
+        //   setAnimatedClassMobile('opacity-1 bottom-[-3%]')
+        // }, 31000);
         setVideoPlay(1);
         playVideo();
       }
@@ -45,6 +45,12 @@ export default function Home() {
       window.addEventListener('scroll',listenScrollToBottom)
     };
   }, [isVideoPlay]);
+
+
+  const onEndVideo = ()=>{
+    setAnimatedClass('opacity-1 bottom-[23%]')
+    setAnimatedClassMobile('opacity-1 bottom-[-3%]')
+  }
 
   const listenScrollToBottom = ()=>{
     if (isScrolledToBottom()) {
@@ -87,7 +93,7 @@ export default function Home() {
         <div className="hidden md:hidden lg:flex flex-col z-1 w-full section-2 justify-center items-center h-[95vh] relative">
           <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[90vh] flex justify-center items-center">
             <div className="absolute bg-red inset-0 z-10"></div>
-            <video muted={true} playsInline={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
+            <video onEnded={onEndVideo} muted={true} playsInline={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
               <source type="video/mp4" src={"/midaz_video_desktop.mov"}></source>
             </video>
             <span className={`max-sm:hidden absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay} text-white`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
@@ -103,7 +109,7 @@ export default function Home() {
         {/* mobile video */}
         <div className="lg:hidden flex h-[100vh] w-full justify-center items-center relative">
           <div className="flex h-[50vh] relative justify-center items-center flex-col mt-10 w-full">
-            <video muted={true} playsInline={true} id="v1" tabIndex={0} preload="auto" className='w-full flex justify-center items-center z-0 relative' controls={false}>
+            <video onEnded={onEndVideo} muted={true} playsInline={true} id="v1" tabIndex={0} preload="auto" className='w-full flex justify-center items-center z-0 relative' controls={false}>
               <source type='video/mp4' src={'/midaz_video_mobile.mp4'}></source>
             </video>
             <span className={`flex flex-col lg:hidden absolute translate-x-[-50%] text-[1rem] z-20 left-[50%] transition-all w-[90%] text-center ${animatedClassMobile} ${isVideoPlay}`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
