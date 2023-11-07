@@ -17,8 +17,6 @@ export default function Home() {
     vid.currentTime = 0;
     var vid1 = document.getElementById("v1") as HTMLVideoElement;
     vid1.currentTime = 0;
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;
   },[])
 
   useEffect(() => {
@@ -30,13 +28,17 @@ export default function Home() {
         setTimeout(() => {
           setAnimatedClass('opacity-1 bottom-[23%]')
           setAnimatedClassMobile('opacity-1 bottom-[-3%]')
-        }, 35000);
+        }, 31000);
         setVideoPlay(1);
         playVideo();
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('scroll',listenScrollToBottom)
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+    setTimeout(() => {
+      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll',listenScrollToBottom)
+    }, 1000);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -86,7 +88,7 @@ export default function Home() {
           <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[90vh] flex justify-center items-center">
             <div className="absolute bg-red inset-0 z-10"></div>
             <video muted={true} playsInline={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
-              <source type="video/mp4" src={"/midaz_video_desktop.mov#t=0,5"}></source>
+              <source type="video/mp4" src={"/midaz_video_desktop.mov"}></source>
             </video>
             <span className={`max-sm:hidden absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay} text-white`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
