@@ -12,6 +12,15 @@ export default function Home() {
   const [animatedClassMobile,setAnimatedClassMobile] = useState('opacity-0 bottom-[17%]')
   const [styleSwipe,setStyleSwipe] = useState('');
 
+  useEffect(()=>{
+    var vid = document.getElementById("v0") as HTMLVideoElement;
+    vid.currentTime = 0;
+    var vid1 = document.getElementById("v1") as HTMLVideoElement;
+    vid1.currentTime = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+  },[])
+
   useEffect(() => {
     const handleScroll = () => {
       if (isVideoPlay == 1) {
@@ -77,7 +86,7 @@ export default function Home() {
           <div className=" relative w-full bg-[#0E1B37] overflow-hidden md:h-[90vh] flex justify-center items-center">
             <div className="absolute bg-red inset-0 z-10"></div>
             <video muted={true} playsInline={true} id="v0" tabIndex={0} preload="preload" className='h-[100%] flex justify-center items-center z-0 relative' controls={false}>
-              <source type="video/mp4" src={"/midaz_video_desktop.mov"}></source>
+              <source type="video/mp4" src={"/midaz_video_desktop.mov#t=0,5"}></source>
             </video>
             <span className={`max-sm:hidden absolute translate-x-[-50%] z-20 left-[50%] transition-all ${animatedClass} ${isVideoPlay} text-white`}>For reservations, please reach us via <Link className='text-golden' href="/pages/contact" as={'/pages/contact'} style={{transitionDuration : '1s'}}>Contact Page</Link></span>
           </div>
