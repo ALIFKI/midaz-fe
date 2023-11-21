@@ -24,13 +24,17 @@ const About : FC<AboutProps> = ({}) => {
       <section className={`mx-[1rem]`}>
         <div className="flex flex-col justify-center items-center mt-[4rem]">
           {/* Text desktop */}
-          <span className={poppins.className+' text-[1.2rem] max-sm:hidden flex text-golden text-center'}>We aspire to lead the F&B lifestyle bar industry <br />by setting trends and reinventing the art of socializing. </span>
+          <span className={poppins.className+' text-[1.2rem] max-sm:hidden flex text-golden text-center'}>We aspire to lead the F&B lifestyle bar industry <br /> by setting trends and reinventing the art of socializing. </span>
           {/* text mobile */}
           <span className={poppins.className+' lg:hidden text-[1.2rem] max-sm:text-[1rem] flex text-[#BEA16F] text-center'}>We aspire to lead the F&B lifestyle bar industry by setting trends <br /> and reinventing the art of socializing. </span>
           {/* desc desktop */}
-          <span className={`${poppins_300.className} text-[1rem] tracking-[0.02rem] text-center leading-[2rem] text-[#B6B6B6] mt-[2.6rem] max-sm:hidden max-w-[62rem]`}>Our commitment to unmatched ambiance, mixology, and gastronomy transforms every visit into an exceptional dining and entertainment experience. Our goal is to foster a sense of belonging, encouraging patrons to create lasting memories with friends and family. Our dedicated staff ensures impeccable service and hospitality, making each visit memorable and enriching.</span>
+          <span className={`${poppins_300.className} text-[1rem] tracking-[0.02rem] text-center leading-[2rem] text-[#B6B6B6] mt-[2.6rem] max-sm:hidden max-w-[62rem]`}>
+            Our commitment to unmatched ambiance, mixology, and gastronomy transforms every visit into an exceptional dining and entertainment experience. Our goal is to foster a sense of belonging, encouraging patrons to create lasting memories with friends and family. Our dedicated staff ensures impeccable service and hospitality, making each visit memorable and enriching.
+          </span>
           {/* desc mobile */}
-          <span className={`${poppins_300.className} text-[1rem] tracking-[0.02rem] text-center leading-[1.8rem] text-[#B6B6B6] mt-[2.6rem] max-sm:mt-[1.8rem] max-w-[62rem] lg:hidden`}>Our commitment to unmatched ambiance, mixology, and gastronomy transforms every visit into an exceptional dining and entertainment experience. <br /> <br /> Our goal is to foster a sense of belonging, encouraging patrons to create lasting memories with friends and family. <br /><br /> Our dedicated staff ensures impeccable service and hospitality, making each visit memorable and enriching.</span>
+          <span className={`${poppins_300.className} text-[1rem] tracking-[0.02rem] text-center leading-[1.8rem] text-[#B6B6B6] mt-[2.6rem] max-sm:mt-[1.8rem] max-w-[62rem] lg:hidden`}>
+            Our commitment to unmatched ambiance, mixology, and gastronomy transforms every visit into an exceptional dining and entertainment experience. Our goal is to foster a sense of belonging, encouraging patrons to create lasting memories with friends and family. Our dedicated staff ensures impeccable service and hospitality, making each visit memorable and enriching.
+          </span>
         </div>
       </section>
       <section>
@@ -42,11 +46,14 @@ const About : FC<AboutProps> = ({}) => {
       <div className="flex w-full justify-center items-center text-[#B6B6B6] lg:mt-20 max-lg:mt-20">
         {/* text desktop */}
         <div className={poppins.className+" flex max-w-[62rem] text-center max-sm:hidden"}>
-        Midaz Club & Lounge boasts a dynamic and diverse entertainment lineup that caters to all tastes. <br /> Whether you're in the mood for live music, electrifying DJ sets, or a culinary adventure, Midaz has it all under one roof.
+        Midaz dining & lounge boost a dynamic and diverse entertainment lineup that caters to all tastes. <br /><br /> Whether you're in the mood for live music, electrifying DJ sets or a culinary adventure, Midaz Senayan Golf
+has it all under one roof, because we only serve you with our best. 
+
         </div>
         {/* text mobile */}
         <div className={poppins.className+" flex max-w-[62rem] text-center lg:hidden"}>
-        Midaz Club & Lounge boasts a dynamic and diverse entertainment lineup that caters to all tastes. <br /> <br /> Whether you're in the mood for live music, electrifying DJ sets, or a culinary adventure, Midaz has it all under one roof.
+        Midaz dining & lounge boost a dynamic and diverse entertainment lineup that caters to all tastes. <br /><br /> Whether you're in the mood for live music, electrifying DJ sets or a culinary adventure, Midaz Senayan Golf
+has it all under one roof, because we only serve you with our best. 
         </div>
       </div>
       </section>
